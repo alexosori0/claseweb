@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
         let swid = esNumero(this.value);
         if (!swid) {
-            window.alert("Debe ser un numero");
+            window.alert("Debe ser un numero por favor...");
         }
     });
 });
