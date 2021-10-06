@@ -1,11 +1,12 @@
 form input[type="text"] {
     display: block;
     border: 1px solid blue;
-    width: 40%;
+    width: 100%;
     height: 30px;
     border-radius: 5px;
     margin-top: 5px;
     margin-bottom: 5px;
+    padding-left: 30px;
 }
 
 .clasediv1 {
@@ -65,4 +66,42 @@ body {
     color: white;
     border-radius: 5px;
     font-size: 18px;
+}
+
+.wrapper {
+    position: relative;
+    width: 200px;
+}
+
+.wrapper:after {
+    /* content: "\f073";*/
+    font-family: 'FontAwesome', 'Arial';
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: inherit;
+    color: #459ce7;
+    font-size: 18px;
+    padding-left: 0.5em;
+    position: absolute;
+    top: 10px;
+    left: 0;
+}
+
+body {
+    background: #ddd;
+    padding: 1em;
+}
+
+i.fa {
+    position: absolute;
+    top: 10px;
+    left: 5px;
+    color: lightblue;
+}
+
+i.fas {
+    position: absolute;
+    top: 10px;
+    left: 5px;
+    color: red;
 }

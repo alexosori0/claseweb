@@ -3,7 +3,7 @@
 
 <head>
     <title>Registro de Clientes</title>
-
+    <script src="https://kit.fontawesome.com/3cfff61bea.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../resources/css/estilo.css" />
 </head>
 
@@ -22,20 +22,30 @@
 
     <div id="show"></div>
     <div style="margin-top:80px;">
-        <form action="#">
+        <form id="formulario" action="#">
             <fieldset>
                 <legend>Contacto</legend>
                 <label for="id">Id:</label>
-                <input type="text" name="id" id="id" />
+                <div class="wrapper">
+                    <input type="text" name="id" id="id" />
+                    <i class="fas fa-key"></i>
+                </div>
                 <label for="nombre">Nombres:</label>
-                <input type="text" name="nombre" id="nombre" />
+                <div class="wrapper">
+                    <input type="text" name="nombre" id="nombre" />
+                    <i class="fas fa-user-circle"></i>
+                </div>
                 <label for="apellidos">Apellidos:</label>
-                <input type="text" name="apellidos" id="apellidos" />
+                <div class="wrapper">
+                    <input name="apellidos" id="apellidos" type="text" name="apellidos" id="apellidos" />
+                    <i class="fa fa-group"></i>
+                </div>
                 <button class="btn" type="submit" id="enviar">Enviar</button>
             </fieldset>
         </form>
         <button id="botonA" type="button" value="A">Boton A</button>
         <button id="botonB" type="button" value="B">Boton B</button>
+
     </div>
     <script type="text/javascript" src="../resources/js/app.js">
     </script>

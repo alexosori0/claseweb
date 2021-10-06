@@ -11,10 +11,20 @@ document.addEventListener('DOMContentLoaded', function() {
 
         let swid = esNumero(this.value);
         if (!swid) {
+
             window.alert("Debe ser un numero por favor...");
+            this.select();
         }
     });
+    let inputs = document.querySelectorAll("#formulario input");
+    inputs.forEach((input) => {
+        input.addEventListener('keyup', validarFormulario);
+    });
 });
+const validarFormulario = (e) => {
+    let targetName = e.target.name;
+    console.log(targetName);
+}
 
 function validarNombre(nombre) {
     if (nombre.length === 0 || nombre == null || nombre.trim() === "") {
